@@ -1,0 +1,15 @@
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\net6.0\ChallengesWithTestsMark8.exe
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\net6.0\ChallengesWithTestsMark8.deps.json
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\net6.0\ChallengesWithTestsMark8.runtimeconfig.json
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\net6.0\ChallengesWithTestsMark8.dll
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\bin\Debug\net6.0\ChallengesWithTestsMark8.pdb
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.GeneratedMSBuildEditorConfig.editorconfig
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.AssemblyInfoInputs.cache
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.AssemblyInfo.cs
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.csproj.CoreCompileInputs.cache
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.sourcelink.json
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.dll
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\refint\ChallengesWithTestsMark8.dll
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.pdb
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ChallengesWithTestsMark8.genruntimeconfig.cache
+E:\Chirag\Learning\TrueCoders\repos\WeeklyChallenges\ChallengesWithTestsMark8\obj\Debug\net6.0\ref\ChallengesWithTestsMark8.dll

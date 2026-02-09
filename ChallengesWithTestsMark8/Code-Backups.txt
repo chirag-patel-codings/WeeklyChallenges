@@ -1,0 +1,37 @@
+/*
+* The below function is copied from internet for checking if the supplied number is a Prime Number. 
+* WORKS CORRECTLY.
+*/
+
+public bool IsPrimeNumber(int num)
+        {
+            if (num <= 1)
+            {
+                return false;
+            }
+
+            if (num == 2)
+            {
+                return true;
+            }
+
+            // Check if the number is divisible by 2. If so, it's not prime (except for 2 itself).
+            if (num % 2 == 0)
+            {
+                return false;
+            }
+
+            // Check for divisibility by odd numbers up to the square root of the number.
+            // We start from 3 and increment by 2 (skipping even numbers).
+            // Using the square root is more efficient than checking all numbers up to number/2.
+            for (int i = 3; i <= Math.Sqrt(num); i += 2)
+            {
+                if (num % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            // If no divisors were found, the number is prime.
+            return true;
+        }

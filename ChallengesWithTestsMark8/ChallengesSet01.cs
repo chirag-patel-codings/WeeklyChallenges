@@ -18,32 +18,37 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            double result = (minuend - subtrahend);
+            return result;
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int result = (number1 + number2);
+            return result;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int result = (number1 < number2 ? number1 : number2);
+            return result;
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            long result = (factor1 * factor2);
+            return result;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            string  greeting = $"Hello{((string.IsNullOrWhiteSpace(nameOfPerson) || string.IsNullOrEmpty (nameOfPerson) ) ? "" : ", " + nameOfPerson)}!";
+            return greeting;
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
         }
     }
 }
