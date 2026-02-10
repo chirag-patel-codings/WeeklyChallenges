@@ -36,6 +36,8 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData("", "aa", "aaa", "aaaa", 0)]
         [InlineData("aa", "aa", "", "aaaa", 0)]
         [InlineData("aaaaaaaaa", "a        a", "aaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaa", 8)]
+        [InlineData(null, "a        a", "aaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaa", 1)]        // New Test Added for null value
+        [InlineData("\0\0", "a        a", "aaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaa", 2)]      // New Test Added: Two null characters
         public void GetLengthOfShortestString(string string1, string string2, string string3, string string4, int expected)
         {
             // Arrange

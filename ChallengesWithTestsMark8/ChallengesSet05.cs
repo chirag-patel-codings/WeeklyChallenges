@@ -8,7 +8,14 @@ namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet05
     {
+ 
 
+        /// <summary>
+        /// Finds the number that is divisible by the supplied 'n' parameter. If the checking number is lower than divisible to be found for 'n' then 'n' is returned.
+        /// </summary>
+        /// <param name="startNumber"></param>
+        /// <param name="n"></param>
+        /// <returns>Next divisible number for checking value. If start number is lower then checking value is returned.</returns>
         public int GetNextNumberDivisibleByN(int startNumber, int n)
         {
             int nextNumberDivisibleByN = 0;
@@ -29,6 +36,11 @@ namespace ChallengesWithTestsMark8
             return nextNumberDivisibleByN;
         }
 
+
+        /// <summary>
+        /// Simply changes the values of the business names to "CLOSED" that does not have any revenues.
+        /// </summary>
+        /// <param name="businesses"></param>
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
         {
             
@@ -46,6 +58,11 @@ namespace ChallengesWithTestsMark8
         }
 
 
+        /// <summary>
+        /// Checks if the supplied input is in ascending order.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>Returns true if the supplied input is in ascending order otherwise false. Returns false if no values supplied.</returns>
         public bool IsAscendingOrder(int[] numbers)
         {
             bool isAscendingOrder = false;
@@ -68,6 +85,11 @@ namespace ChallengesWithTestsMark8
         }
 
 
+        /// <summary>
+        /// Calculates the Sum of the elements those are followed by even numbers in the supplied array.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>Returns the Sum of the elements those are followed by the even numbers in the supplied array. If no values supplied, returns '0'.</returns>
         public int SumElementsThatFollowAnEven(int[] numbers)
         {
             int sumElementsThatFollowAnEven = 0;
@@ -86,6 +108,12 @@ namespace ChallengesWithTestsMark8
             return sumElementsThatFollowAnEven;
         }
 
+
+        /// <summary>
+        /// Simply joins each elements in the supplied string (in the same order) with single space character and returns the output with '.' added at the end. 
+        /// </summary>
+        /// <param name="words"></param>
+        /// <returns>Returns the words in the single string with space char added in-between, null & duplicting space chars removed and '.' added at the end.</returns>
         public string TurnWordsIntoSentence(string[] words)
         {
             string turnWordsIntoSentence = "";
@@ -110,6 +138,12 @@ namespace ChallengesWithTestsMark8
             return turnWordsIntoSentence;
         }
 
+
+        /// <summary>
+        /// Finds and returns every 4th element from the source list. 
+        /// </summary>
+        /// <param name="elements"></param>
+        /// <returns>Returns every 4th element from the source list. If the source is blank/null, returns the empty array.</returns>
         public double[] GetEveryFourthElement(List<double> elements)
         {
             List<double> getEveryFourthElement = new List<double>();
@@ -131,6 +165,13 @@ namespace ChallengesWithTestsMark8
             return getEveryFourthElement.ToArray();
         }
 
+
+        /// <summary>
+        /// Checks if the sum of the two elements (at different index positions) can equal to the targetNumber. 
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="targetNumber"></param>
+        /// <returns>Returs true if the sum equals to targetNumber otherwise false.</returns>
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
         {
             bool twoDifferentElementsInArrayCanSumToTargetNumber = false;
