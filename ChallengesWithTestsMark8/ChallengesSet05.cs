@@ -42,6 +42,7 @@ namespace ChallengesWithTestsMark8
                     }
                 }
             }
+        
         }
 
 
@@ -109,7 +110,6 @@ namespace ChallengesWithTestsMark8
             return turnWordsIntoSentence;
         }
 
-        
         public double[] GetEveryFourthElement(List<double> elements)
         {
             List<double> getEveryFourthElement = new List<double>();

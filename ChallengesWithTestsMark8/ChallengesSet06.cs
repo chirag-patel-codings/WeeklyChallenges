@@ -10,10 +10,12 @@ namespace ChallengesWithTestsMark8
         public bool CollectionContainsWord(IEnumerable<string> words, string word, bool ignoreCase)
         {
             var collectionContainsWord = false;
+            
             if (words != null)
             {
                 collectionContainsWord = words.Contains(word, ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal);
             }
+            
             return collectionContainsWord;
         }
 
@@ -24,7 +26,7 @@ namespace ChallengesWithTestsMark8
             switch (num)
             {
                 case <= 1:
-                case int when (num % 2 == 0 && num != 2):
+                case int when (num != 2 && num % 2 == 0):
                     isPrimeNumber = false;
                     break;
                 case 2:

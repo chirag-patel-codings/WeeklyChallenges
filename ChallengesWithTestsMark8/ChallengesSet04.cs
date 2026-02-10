@@ -51,6 +51,7 @@ namespace ChallengesWithTestsMark8
             int[] parameters = new int[] { number1, number2, number3, number4 };
 
             result = parameters[0];
+
             foreach (int parameter in parameters)
             {
                 result = parameter < result ? parameter : result;
@@ -155,6 +156,7 @@ namespace ChallengesWithTestsMark8
             {
                 throw new ArgumentOutOfRangeException("number", number, "The number must be greater than zero");
             }
+            
             return factorial;
         }
     }

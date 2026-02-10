@@ -8,26 +8,22 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            bool result = (char.IsLetter(c) ? true : false);
-            return result;
+            return (char.IsLetter(c) ? true : false);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            bool result = (vals != null && vals.Length % 2 == 0) ? true : false;
-            return result;
+            return (vals != null && vals.Length % 2 == 0) ? true : false;
         }
 
         public bool IsNumberEven(int number)
         {
-            bool result = (number % 2 == 0) ? true : false;
-            return result;
+            return (number % 2 == 0) ? true : false;
         }
 
         public bool IsNumberOdd(int num)
         {
-            bool result = (num % 2 != 0) ? true : false;
-            return result;
+            return (num % 2 != 0) ? true : false;
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
