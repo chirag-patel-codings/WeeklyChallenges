@@ -85,7 +85,7 @@ namespace ChallengesWithTestsMark8
 
         public int[] GetOddsBelow100()
         {
-            List<int> result = new List<int>();
+            var result = new List<int>();
 
             for (int i = 1; i < 100; i++)
             {
