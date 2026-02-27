@@ -9,45 +9,36 @@ namespace ChallengesWithTestsMark8
     {
         public bool CollectionContainsWord(IEnumerable<string> words, string word, bool ignoreCase)
         {
-            var collectionContainsWord = false;
             
-            if (words != null)
-            {
-                collectionContainsWord = words.Contains(word, ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal);
-            }
-            
-            return collectionContainsWord;
+            return words?.Contains(word, ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal) ?? false;
         }
 
         public bool IsPrimeNumber(int num)
         {
-            bool isPrimeNumber = true;
             
-            switch (num)
-            {
-                case <= 1:
-                case int when (num != 2 && num % 2 == 0):
-                    isPrimeNumber = false;
-                    break;
-                case 2:
-                    isPrimeNumber = true;
-                    break;
-                case >= 3:
-                    for (int i = 3; i <= Math.Sqrt(num); i += 2)
-                    {
-                        if (num % i == 0)
-                        {
-                            isPrimeNumber = false;
-                        }
-                    }
-                    break;
-            }
+            bool isPrimeNumber = true;
 
+            if (num <= 1 || (num != 2 && num % 2 == 0))
+            {
+                isPrimeNumber = false;
+            }
+            else if (num >= 3)
+            {
+                for (int i = 3; i <= Math.Sqrt(num); i += 2)
+                {
+                    if (num % i == 0)
+                    {
+                        isPrimeNumber = false;
+                    }
+                }
+            }
+            
             return isPrimeNumber;
         }
 
         public int IndexOfLastUniqueLetter(string str)
         {
+            
             int indexOfLastUniqueLetter = -1;
             bool isLetterUnique = true;
             List<char> nonUniqueLetters = new List<char>();
@@ -80,10 +71,12 @@ namespace ChallengesWithTestsMark8
             }
 
             return indexOfLastUniqueLetter;
+            
         }
 
         public int MaxConsecutiveCount(int[] numbers)
         {
+            
             int maxConsecutiveCount = 0;
             int consecutiveCount = 0;
             
@@ -102,22 +95,14 @@ namespace ChallengesWithTestsMark8
                     }
                 }
             }
-
+            
             return maxConsecutiveCount;
         }
 
-
-
         public double[] GetEveryNthElement(List<double> elements, int n)
         {
-            List<double> getEveryNthElement = new List<double>();
             
-            if(elements != null)
-            {
-                getEveryNthElement = elements.Where((index, e) => (n > -1 && (index) % n == 0)).ToList();
-            }
-
-            return getEveryNthElement.ToArray();
+            return elements?.Where((e, index) => (n > -1 && (index + 1) % n == 0)).ToArray() ?? new double[] {};
         }
     }
 }
