@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {}
+    "E:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {}
   },
   "projects": {
-    "e:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {
+    "E:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
+        "projectUniqueName": "E:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
         "projectName": "ChallengesWithTestsMark8",
-        "projectPath": "e:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
+        "projectPath": "E:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj",
         "packagesPath": "C:\\Users\\CPLearning\\.nuget\\packages\\",
-        "outputPath": "e:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\obj\\",
+        "outputPath": "E:\\Chirag\\Learning\\TrueCoders\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

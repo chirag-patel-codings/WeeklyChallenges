@@ -11,22 +11,8 @@ namespace ChallengesWithTestsMark8
 
         public int GetNextNumberDivisibleByN(int startNumber, int n)
         {
-            int nextNumberDivisibleByN = 0;
             
-            if(n > startNumber)
-            {
-                nextNumberDivisibleByN = n;
-            }
-            else
-            {
-                nextNumberDivisibleByN = startNumber + 1;
-                while(nextNumberDivisibleByN % n != 0)
-                {
-                    nextNumberDivisibleByN++;
-                }
-            }
-            
-            return nextNumberDivisibleByN;
+            return (n > startNumber) ? n : (startNumber - (startNumber % n) + n);
         }
 
         public void ChangeNamesOfBusinessesWithNoRevenueTo_CLOSED(Business[] businesses)
@@ -42,31 +28,23 @@ namespace ChallengesWithTestsMark8
                     }
                 }
             }
-        
         }
-
 
         public bool IsAscendingOrder(int[] numbers)
         {
-            bool isAscendingOrder = false;
+            bool isAscendingOrder = (numbers != null && numbers.Length > 0) ? true : false;
 
-            if (numbers != null)
+            for (int i = 0; i < numbers?.Length - 1; i++)
             {
-                isAscendingOrder = numbers.Length > 0 ? true : false;
-
-                for (int i = 0; i < numbers.Length - 1; i++)
+                if (numbers[i] > numbers[i + 1])
                 {
-                    if (numbers[i] > numbers[i + 1])
-                    {
-                        isAscendingOrder = false;
-                        break;
-                    }
+                    isAscendingOrder = false;
+                    break;
                 }
             }
-
+            
             return isAscendingOrder;
         }
-
 
         public int SumElementsThatFollowAnEven(int[] numbers)
         {
@@ -78,57 +56,38 @@ namespace ChallengesWithTestsMark8
                 {
                     if (numbers[i - 1] % 2 == 0)
                     {
-                        sumElementsThatFollowAnEven = sumElementsThatFollowAnEven + numbers[i];
+                        sumElementsThatFollowAnEven += numbers[i];
                     }
                 }
             }
-
+            
             return sumElementsThatFollowAnEven;
         }
 
         public string TurnWordsIntoSentence(string[] words)
         {
-            string turnWordsIntoSentence = "";
 
-            if (words != null)
+            string turnWordsIntoSentence = words == null ?  "" : string.Join(" ", words);
+
+            while (turnWordsIntoSentence.Contains("  "))
             {
-                turnWordsIntoSentence = string.Join(" ", words);
-
-                while (turnWordsIntoSentence.Contains("  "))
-                {
-                    turnWordsIntoSentence = turnWordsIntoSentence.Replace("  ", " ");
-                }
-
-                turnWordsIntoSentence = turnWordsIntoSentence.Trim();
-
-                if (turnWordsIntoSentence.Length > 0)
-                {
-                    turnWordsIntoSentence = $"{turnWordsIntoSentence}.";
-                }
+                turnWordsIntoSentence = turnWordsIntoSentence.Replace("  ", " ");
             }
 
+            turnWordsIntoSentence = turnWordsIntoSentence.Trim();
+
+            if (turnWordsIntoSentence.Length > 0)
+            {
+                turnWordsIntoSentence = turnWordsIntoSentence + ".";
+            }
+            
             return turnWordsIntoSentence;
         }
 
         public double[] GetEveryFourthElement(List<double> elements)
         {
-            List<double> getEveryFourthElement = new List<double>();
 
-            if (elements != null)
-            {
-                if (elements.Count > 3)
-                {
-                    for (int i = 1; i < elements.Count; i++)
-                    {
-                        if ((i + 1) % 4 == 0)
-                        {
-                            getEveryFourthElement.Add(elements[i]);
-                        }
-                    }
-                }
-            }
-
-            return getEveryFourthElement.ToArray();
+            return (elements != null) ? elements.Where((e, index) => (index + 1) % 4 == 0).ToArray() : new double[] {};
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)
