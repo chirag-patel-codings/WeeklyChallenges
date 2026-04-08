@@ -87,7 +87,9 @@ namespace ChallengesWithTestsMark8
         public double[] GetEveryFourthElement(List<double> elements)
         {
 
-            return (elements != null) ? elements.Where((e, index) => (index + 1) % 4 == 0).ToArray() : new double[] {};
+            // return (elements != null) ? elements.Where((e, index) => (index + 1) % 4 == 0).ToArray() : new double[] {};      // ALSO WORKS
+
+            return elements?.Where((e, index) => (index + 1) % 4 == 0).ToArray() ?? new double[] { };
         }
 
         public bool TwoDifferentElementsInArrayCanSumToTargetNumber(int[] nums, int targetNumber)

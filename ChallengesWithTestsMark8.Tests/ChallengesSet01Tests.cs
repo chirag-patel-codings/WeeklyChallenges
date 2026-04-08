@@ -3,10 +3,12 @@ using Xunit;
 
 namespace ChallengesWithTestsMark8.Tests
 {
+    // For the "Test Driven Development": Unit tests are written first and then the application software code (units) 
+    // are written to be tested with their tests. This process helps to write more readable and less complex codes.
     public class ChallengesSet01Tests
     {
         [Theory]
-        [InlineData(1, 1, true)]
+        [InlineData(1, 1, true)]        // Parameters of '[Theory]': Test Cases with input data and expected result
         [InlineData(10, 10, true)]
         [InlineData(99, 99, true)]
         [InlineData(-10, -10, true)]
@@ -17,13 +19,24 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData(5, 6, false)]
         public void AreTwoNumbersTheSame(int number1, int number2, bool expected)
         {
-            // Arrange
+            // This function is the "Unit Test" for the 'AreTwoNumbersTheSame' function (called unit) of 'ChallengesSet01' class.
+            // Unit Tests contain 'Arrange', 'Act' and 'Assert' implemetations
+
+            // Process:
+            // RED: Written unit tests must fail first (for their unit/code) so that marks them 'Red' in Test Explorer.
+            // GREEN: Now, the proper software code developed and tested which passes all of it's unit test 
+            //        which marks all the test as 'Green' in Test Explorer and assures that all the tests are passed for a unit.
+            // REFACTOR: Where more efficient, less complex and better readable code is refactored/re-written for the same unit 
+            //           to be retested and re-flagged as 'Green' in the Test Explorer.
+
+            // Arrange -- Arrage to call the method being tested by creating (Or referring if - static class)
+            //            an instance of a class
             ChallengesSet01 challenger = new ChallengesSet01();
 
-            // Act
+            // Act  -- Call the method to retrieve the result (into 'actual' (Naming convention))
             bool actual = challenger.AreTwoNumbersTheSame(number1, number2);
 
-            // Assert
+            // Assert -- Assert the test result: expected vs actual
             Assert.Equal(expected, actual);
         }
 
@@ -139,7 +152,7 @@ namespace ChallengesWithTestsMark8.Tests
             Assert.Equal(expectedGreeting, actual);
         }
 
-        [Fact]
+        [Fact]      // Invariant tests, always true (no parameters).
         public void GetHey()
         {
             // Arrange

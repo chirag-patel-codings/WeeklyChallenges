@@ -9,7 +9,9 @@ namespace ChallengesWithTestsMark8
     {
         public bool CollectionContainsWord(IEnumerable<string> words, string word, bool ignoreCase)
         {
-            
+
+            // return (words == null) ? false : words.Contains(word, ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal);   //ALSO WORKS
+
             return words?.Contains(word, ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal) ?? false;
         }
 
@@ -29,6 +31,7 @@ namespace ChallengesWithTestsMark8
                     if (num % i == 0)
                     {
                         isPrimeNumber = false;
+                        break;
                     }
                 }
             }
@@ -101,6 +104,8 @@ namespace ChallengesWithTestsMark8
 
         public double[] GetEveryNthElement(List<double> elements, int n)
         {
+
+            // return (elements == null) ? new double[] { } : elements.Where((e, index) => (n > -1 && (index + 1) % n == 0)).ToArray();    // ALSO WORKS
             
             return elements?.Where((e, index) => (n > -1 && (index + 1) % n == 0)).ToArray() ?? new double[] {};
         }
